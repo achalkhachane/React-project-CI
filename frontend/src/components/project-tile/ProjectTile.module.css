@@ -1,0 +1,73 @@
+.portfolio-latest-projects__project-tile {
+  width: 22%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.portfolio-latest-projects__project-tile hr {
+  width: 100%;
+  height: 0px;
+
+  border: 2px solid var(--color-project-tile-border);
+  border-radius: 5px;
+}
+
+.portfolio-project__content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio-project-tile-content {
+  margin: 0.3rem 0;
+}
+
+.portfolio-project-tile-content h6 {
+  margin: 0;
+
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 1rem;
+
+  color: var(--color-primary-font);
+}
+
+.portfolio-project-tile-content p {
+  margin: 0;
+
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: 30px;
+
+  color: #18171c;
+}
+
+.portfolio-project-tile_image-box {
+  width: 100%;
+  height: 250px;
+  max-height: 250px;
+
+  background: var(--color-project-tile-border);
+  padding: 1rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.portfolio-project-tile_image-box img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media screen and (max-width: 768px) {
+  .portfolio-latest-projects__project-tile {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

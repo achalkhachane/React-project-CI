@@ -1,0 +1,102 @@
+.project-item {
+  width: 70%;
+  position: relative;
+}
+
+.project-image-container {
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 250px;
+
+  object-fit: cover;
+  border: 1px solid var(--color-secondary-font);
+  /* border-right: none; */
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tools-container {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  opacity: 0;
+  height: calc(100% - 5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none;
+  padding-top: auto;
+  padding-bottom: 0.5rem;
+
+  background: var(--color-secondary);
+  border-radius: 0 8px 8px 0;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0, 1.17);
+}
+
+.project-name,
+.project-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-item p {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  color: var(--color-primary-font);
+}
+
+.project-type > * {
+  margin-right: 0.5rem;
+}
+
+.tech-container,
+.tool-container {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-secondary);
+  cursor: pointer;
+}
+
+.tool-container {
+  background: var(--color-primary);
+  margin-top: 1rem;
+}
+
+.tech-container img,
+.tool-container img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ********************************** Sudo Selectors ********************************** */
+
+.project-image:hover {
+  border-right: none;
+}
+
+.project-image:hover + .tools-container {
+  width: 50px;
+  opacity: 1;
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media screen and (max-width: 768px) {
+  .project-item {
+    width: 90%;
+  }
+}

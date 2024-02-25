@@ -1,0 +1,148 @@
+.section_padding {
+  width: 100%;
+  display: flex;
+  position: relative;
+
+  padding: 10rem 2.5rem 6rem;
+  box-sizing: border-box;
+}
+
+.portfolio-contact__col-1 {
+  flex: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.portfolio-contact__col-2 {
+  flex: 40%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.portfolio-contact__col-1 h2 {
+  width: 70%;
+
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 3rem;
+
+  color: var(--color-primary-font);
+}
+
+.portfolio-contact__col-1 h2 em {
+  text-decoration: underline;
+  cursor: pointer;
+
+  color: var(--color-secondary);
+}
+
+.portfolio-contact__col-1 a {
+  text-decoration: none;
+}
+
+.sub-title {
+  font-family: var(--font-headings);
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
+
+  color: var(--color-secondary-font);
+}
+
+.margin-removed {
+  margin: 0 0 1rem;
+}
+
+.portfolio-contact__tile-container {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.portfolio-contact__tile-container hr {
+  width: 100%;
+  height: 0px;
+
+  border: 2px solid var(--color-primary-font);
+  border-radius: 5px;
+}
+
+.portfolio-contact__tile-wrapper {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 1rem 0 0 1rem;
+  cursor: pointer;
+}
+
+.portfolio-contact__tile-wrapper a {
+  text-decoration: none;
+  color: var(--font-primary);
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.portfolio-contact__tile-wrapper p {
+  margin-left: 1rem;
+
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.icon-container {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-secondary);
+}
+
+.icon-container img {
+  width: 25px;
+  height: 25px;
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media screen and (max-width: 768px) {
+  .section_padding {
+    flex-direction: column;
+    padding: 2rem 2rem 0.6rem;
+
+    height: unset;
+  }
+
+  .portfolio-contact__col-1 h2 {
+    width: 90%;
+    
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .portfolio-contact__col-2 {
+    margin-top: 1.5rem;
+  }
+
+  .portfolio-contact__tile-wrapper p {
+    width: 70%;
+    word-wrap: break-word;
+  }
+}
